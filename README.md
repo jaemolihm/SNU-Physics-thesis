@@ -7,7 +7,7 @@ https://www.overleaf.com/latex/templates/snu-dissertation-template/fxvtwvxzdpvp
 
 ## 사용법
 
-0. 대학원에 입학하고 연구를 열심히 하여 박사학위 논문 제목 및 내용을 완성한다.
+0. 대학원에 입학하고 연구를 열심히 하여 학위논문 제목 및 내용을 완성한다.
 1. `thesis_and_committee.tex` 에 필요한 내용을 작성한다.
 2. `injun.tex` 에 본인 이름을 수정한다.
 3. `pdflatex injun.tex` 로 컴파일하여 인준지 `injun.pdf` 를 생성한다. (공개심사 날 인쇄하여 가져가서 서명 받아야 함.)
