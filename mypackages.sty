@@ -1,0 +1,50 @@
+% \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{oubraces}
+\usepackage{bm}
+\usepackage{bbm}
+\usepackage{mathbbol}
+\usepackage{physics}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{bbold}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage[normalem]{ulem}
+\usepackage{float}
+\usepackage[section]{placeins}
+\usepackage{afterpage}
+\usepackage{lipsum}
+\usepackage[dvipsnames]{xcolor}
+
+\makeatletter
+\newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
+\makeatother
+
+\newcommand{\colr}[1]{{\leavevmode\color{red}#1}}
+\newcommand{\colb}[1]{{\leavevmode\color{blue}#1}}
+\newcommand{\nnnl}{\nonumber \\}
+
+% Color-coding commands
+\newcommand{\MYadd}[2]{\color{#1}{#2}}
+\newcommand{\MYsout}[2]{\color{#1}{\sout{#2}}}
+\newcommand{\MYcancel}[2]{\color{#1}{\hcancel{#2}}}
+\newcommand{\MYcomment}[3]{\color{#1}{[\small \textbf{{#2}:} \textit{#3}]}}
+
+\newcommand{\jml}[1]{{\MYadd{Magenta}{#1}}} % revision
+\newcommand{\jmlc}[1]{{\MYcomment{Magenta}{JML}{#1}}} % comment
+\newcommand{\jmlx}[1]{{\MYsout{Magenta}{#1}}} % strike-out
+\newcommand{\jmlxx}[1]{{\MYcancel{Magenta}{#1}}} % strike-out
+
+\newcommand{\todo}[1]{{\color{red}{[\textbf{todo:} #1]} }} 
+
+\newcommand{\Eq}[1]{Eq.~\eqref{#1}}
+\newcommand{\Eqs}[1]{Eqs.~\eqref{#1}}
+\newcommand{\Sec}[1]{Sec.~\ref{#1}}
+
+
+%% custom line breaks for long words (add your own!)
+% \hyphenation{Lo-renz}

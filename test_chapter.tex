@@ -1,0 +1,50 @@
+% \documentclass[preprint,aps,12pt]{revtex4-1}
+\documentclass[twoside,phd,4x6]{snuthesis}
+
+\usepackage[backend=bibtex,style=phys,biblabel=brackets,maxbibnames=12,maxcitenames=2,sortcites=false,url=false,doi=false]{biblatex}
+	\setlength\bibitemsep{\baselineskip} % spacing between bibitems when single-spacing is used
+	\addtolength\bibitemsep{0pt plus 10pt minus 10pt} % some wiggle room for bibitem spacing
+	\addbibresource{references.bib}
+
+ \usepackage[labelfont=bf]{caption} % change number for spacing modification in: font={stretch=1.1}
+	\captionsetup[figure]{labelfont={bf},name={Figure},labelsep=quad,font={stretch=1.1}}
+	\captionsetup[table]{labelfont={bf},name={Table},labelsep=quad,font={stretch=1.1}}
+
+\usepackage[]{hyperref}
+\hypersetup{
+	pdftitle={Choonkyu Lee PhD Dissertation},
+	pdfauthor={Choonkyu Lee},
+	pdfsubject={PhD Dissertation},
+	pdfkeywords={SNU},
+	bookmarksnumbered=true,     
+	bookmarksopen=true,         
+	bookmarksopenlevel=1,       
+	colorlinks=false, % do not use links for references and footnotes
+	hidelinks, % remove ugly boxed windows indicating links           
+	pdfstartview=Fit, % choose "Fit" to start with fit window            
+	pdfpagemode=UseOutlines,    % outlines on pdf document
+	pdfpagelayout=TwoPageRight % two page viewer with odd number pages to the right/ other option: "OneColumn" for scrolling
+}
+
+\usepackage{mypackages}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\input{chapter1.tex}
+
+\begingroup
+    % \setstretch{1.1} % remove to make all references double spacing 
+    % (remember to remove \setlength\bibitemsep in preamble if you choose to use double spacing)
+    %\nohyphenation % turn on to prevent hyphenation in bibliography
+	\phantomsection\clearpage\addcontentsline{toc}{chapter}{Bibliography}
+	\printbibliography
+\endgroup
+
+
+\end{document}
+
+
