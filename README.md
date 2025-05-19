@@ -18,3 +18,4 @@ https://www.overleaf.com/latex/templates/snu-dissertation-template/fxvtwvxzdpvp
 
 ## 기타
 * 장 별로 따로 컴파일을 하고자 할 경우, `test_chapter.tex` 의 `\input{chapter1.tex}` 부분을 원하는 파일로 수정하여 컴파일하면 된다. Overleaf 에서는 메뉴-Main document 를 `test_chapter.tex` 로 설정하면 편하다.
+* 사용하는 alias 가 있다면 `mypackages.sty` 에 추가하면 된다.
